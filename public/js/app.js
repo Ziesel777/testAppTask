@@ -101,7 +101,7 @@ class App {
 				name = elem.name,
 				email = elem.email,
 				desc = elem.text_task,
-				status = (elem.performed!=null && elem.performed!=0) ? 'выполненно':'в работе',
+				status = (elem.performed!=null && elem.performed!=0) ? 'выполнено':'в работе',
 				edit = (elem.edited!=null && elem.edited!=0) ? '<br><b class="text-warning">отред.админ</br>':'',
 				classPerf = (elem.performed!=null && elem.performed!=0) ? 'job':'success';
 
