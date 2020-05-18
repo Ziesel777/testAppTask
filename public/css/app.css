@@ -1,0 +1,154 @@
+.loader {
+	position: absolute;
+
+	height: 100%;
+	width: 100%;
+
+	top: 0;
+	left: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: rgba(255, 255, 255, 0.8);
+
+	z-index: 100;
+}
+
+.alert {
+	display: none;
+}
+
+.page-link {
+	cursor: pointer;
+	user-select: none;
+
+	background-color: #343a40;
+	color: #fff;
+	border-color: rgb(102, 103, 104);
+
+	transition: all .3s;
+}
+
+.page-link:focus {
+	box-shadow: unset;
+}
+.page-link:hover {
+	color: #000;
+}
+
+.pagination .active .page-link {
+	border-color: rgb(207, 207, 207);
+	background-color: #1d2124;
+	/* box-shadow: 0 0 0 0.2rem rgba(128, 128, 128, 0.25); */
+	box-shadow: unset;
+}
+
+.link-wrapper {
+	display: flex;
+}
+.link-wrapper .page-item .page-link {
+	border-radius: 0;
+}
+
+.table .id {
+	/* width: 5%; */
+	min-width: 20px;
+}
+.table .input-group-prepend {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.table .btn {
+	border: unset;
+}
+.table .btn:focus {
+	box-shadow: unset;
+}
+.table thead th {
+	vertical-align: middle;
+}
+.table .name {
+	width: 10%;
+	min-width: 200px;
+}
+.table .email {
+	width: 10%;
+	min-width: 200px;
+}
+.table .desc {
+	width: 65%;
+	min-width: 200px;
+}
+.table .perf {
+	width: 10%;
+	min-width: 100px;
+}
+
+.btn:disabled {
+	cursor: no-drop;
+}
+
+.error {
+	color: #dc3545;
+}
+.job {
+	color: #17a2b8;
+}
+.success {
+	color: #28a745;
+}
+
+label.error {
+	position: absolute;
+	margin-left: 8px;
+
+	font-size: 0.75rem;
+	margin-bottom: 0;
+}
+
+.dropdown-item:active{
+	background-color: #343a40d0;
+}
+
+.bg-login-form {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-form {
+	position: relative;
+	width: 30%;
+	min-width: 400px;
+}
+
+.back-to-main {
+	position: absolute;
+	top: calc(100% + 8px);
+}
+
+.alert-info-container {
+	position: absolute;
+	left: 0;
+	bottom: calc(100% + 12px);
+
+	width: 100%;
+}
+
+.info-lead,
+.check-status,
+.btn-save,
+.btn-cancel {
+	display: none;
+}
